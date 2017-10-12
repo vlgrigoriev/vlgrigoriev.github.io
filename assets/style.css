@@ -1,0 +1,378 @@
+/*
+Designing and coding by Vladislav Grigoriev
+Youngee - Space serviece of web-developments.
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&subset=cyrillic,cyrillic-ext,latin-ext');
+
+/* = = = = = GENERAL = = = = = */
+html, body {
+  height: 100%;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  padding: 0;
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box
+  -moz-box-sizing: border-box
+}
+
+ul, ol {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+h1, h2, h3, h4, h5, p {
+  font-weight: 400;
+  padding: 0;
+  margin: 0;
+}
+
+/* = = = = = HEADER = = = = = */
+.header {
+  position: relative;
+  width: 100%;
+  height: 520px;
+  background: url(../images/space.svg);
+  background-color: #3e324f;
+  background-position: 50%;
+  background-size: auto 100%;
+}
+
+.hero {
+  position: relative;
+  max-width: 1200px;
+  height: 100%;
+  padding: 0;
+  margin: 0 auto;
+}
+
+.hero-menu ul {
+  text-align: center;
+  display: block;
+  padding: 80px 0;
+}
+
+.hero-menu ul li {
+  display: inline-block;
+  float: none;
+}
+
+.hero-menu ul li a {
+  color: #FFF;
+  letter-spacing: 1px;
+  font-weight: 400;
+  text-decoration: none;
+  text-transform: uppercase;
+  background: transparent;
+  padding: 32px 28px;
+}
+
+.hero-menu ul li a:hover {
+  background: rgba(255,255,255,.3);
+}
+
+.hero-action {
+  text-align: center;
+  margin: 40px 0;
+}
+
+.logo {
+  width: 100px;
+  height: 100px;
+  fill: #FFF;
+}
+
+.hero-scroll {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 1rem;
+  text-align: center;
+}
+
+.hero-scroll a {
+  display: inline-block;
+  width: 28px;
+  height: 28px;
+  fill: #FFF;
+}
+
+.hero-scroll a:hover {
+  width: 34px;
+  height: 34px;
+}
+
+/* = = = = = PORTFOLIO = = = = = */
+.portfolio {
+  max-width: 1200px;
+  padding: 0;
+  margin: 0 auto;
+  padding: 46px 0 40px;
+  overflow: hidden;
+}
+
+.title-portfolio {
+  color: #596363;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.title-portfolio h2 {
+  display: inline;
+  font-weight: 300;
+  text-transform: uppercase;
+  border: 1px solid #596363;
+  border-radius: 6px;
+  padding: 6px 18px;
+}
+
+.title-portfolio h3 {
+  margin: 46px 0 10px;
+}
+
+.title-portfolio p {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* ~ Constant ~ */
+.post {
+  position: relative;
+  display: inline-block;
+  float: left;
+  width: 33.33%;
+  height: 280px;
+  padding: 10px 10px;
+}
+
+.content {
+  position: relative;
+  height: 100%;
+  border-radius: 6px;
+  background: #e1eff0;
+}
+/* ~ End constant ~ */
+
+/* = = = = = ABOUT = = = = = */
+.about {
+  width: 100%;
+  height: 300px;
+  background: url(../images/mars.svg) no-repeat;
+  background-color: #f58f6e;
+  background-position: 50%;
+  background-size: auto 100%;
+  padding: 46px 0 40px 0;
+}
+
+.title-about {
+  color: #FFF;
+  text-align: center;
+  margin-bottom: 46px;
+}
+
+.title-about h2 {
+  display: inline;
+  font-weight: 300;
+  text-transform: uppercase;
+  border: 1px solid #FFF;
+  border-radius: 6px;
+  padding: 6px 18px;
+}
+
+.about p {
+  max-width: 1200px;
+  color: #FFF;
+  text-align: center;
+  background: rgba(0,0,0,.2);
+  border-radius: 6px;
+  padding: 30px 10px;
+  margin: 0 auto;
+}
+
+/* = = = = = COMMUNICATE = = = = = */
+.communicate {
+  background: #38354f;
+  padding: 46px 0 40px;
+}
+
+.title-communicate {
+  color: #FFF;
+  text-align: center;
+  margin-bottom: 46px;
+}
+
+.title-communicate h2 {
+  display: inline;
+  font-weight: 300;
+  text-transform: uppercase;
+  border: 1px solid #FFF;
+  border-radius: 6px;
+  padding: 6px 18px;
+}
+
+.title-communicate p {
+  max-width: 600px;
+  padding-top: 46px;
+  margin: 0 auto;
+}
+
+.form {
+  max-width: 460px;
+  padding: 0 8px;
+  margin: 0 auto;
+}
+
+.form label {
+  display: block;
+  color: #FFF;
+  margin-bottom: 0.4rem;
+}
+
+.form textarea {
+  min-width: 100%;
+  min-height: 240px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  outline: none;
+  border: none;
+  border-radius: 6px;
+  background: #ededed;
+  padding: 20px;
+  margin-bottom: 14px;
+}
+
+.form textarea:hover {
+  background: #FFF;
+}
+
+.form textarea:focus {
+  background: #FFF;
+}
+
+/* ~ Constant ~ */
+input[type="text"], input[type="email"] {
+  min-width: 100%;
+  height: 40px;
+  color: #38354f;
+  font-size: 14px;
+  outline: none;
+  border: none;
+  border-radius: 6px;
+  background: #ededed;
+  padding: 0 20px;
+  margin-bottom: 20px;
+}
+
+input[type="text"]:hover, input[type="email"]:hover {
+  background: #FFF;
+}
+
+input[type="text"]:focus, input[type="email"]:focus {
+  background: #FFF;
+}
+/* ~ End constant ~ */
+
+input[type="submit"] {
+  min-width: 50%;
+  color: #FFF;
+  font-size: 16px;
+  text-align: center;
+  text-transform: uppercase;
+  outline: none;
+  border: none;
+  border-radius: 6px;
+  background: #f58f6e;
+  cursor: pointer;
+  padding: 18px 0;
+}
+
+input[type="submit"]:hover {
+  background: #e27960;
+}
+
+/* = = = = = FOOTER = = = = = */
+.footer {
+  max-width: 1200px;
+  color: #596363;
+  font-size: 12px;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 40px 0;
+  margin: 0 auto;
+}
+
+.social-icons {
+  margin-bottom: 26px;
+}
+
+.social-icons a {
+  padding: 0 30px;
+  overflow: hidden;
+}
+
+.i-footer {
+  width: 35px;
+  fill: rgba(98, 198, 241, 0.3);
+}
+
+.i-footer:hover {
+  fill: rgba(98, 198, 241, 1);
+}
+
+/* ~ Mobile ~ */
+@media (min-width: 0px) and (max-width: 320px) {
+  .header {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: url(../images/space.svg);
+    background-color: #3e324f;
+    background-position: 50%;
+    background-size: auto 100%;
+  }
+  .hero-action {
+    text-align: center;
+    margin: 30% 0;
+  }
+  .logo {
+    width: 200px;
+    height: 200px;
+  }
+  .title-portfolio h2, .title-about h2, .title-communicate h2 {
+    font-size: 30px;
+  }
+  .title-portfolio h3, .title-portfolio p, .title-communicate p {
+    display: none;
+  }
+  .about p {
+    font-size: 12px;
+    padding: 8px 10px;
+    margin: 0 40px;
+  }
+  .post {
+    display: inline-block;
+    width: 100%;
+    height: 380px;
+    padding: 10px 10%;
+  }
+}
+
+/* ~ Action contant ~ */
+.hero-menu ul li a, .hero-scroll,
+.form textarea, input[type="text"],
+input[type="email"], .i-footer,
+.button, .hero-scroll a {
+  -webkit-transition: all 0.2s ease;
+	    -ms-transition: all 0.2s ease;
+	     -o-transition: all 0.2s ease;
+	        transition: all 0.2s ease;
+}
